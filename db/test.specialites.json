@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "nom": "Math",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d3cb200c76b325c0b55d3"
+  },
+  "nom": "Arabe",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6643da427b46646dc20be9b0"
+  },
+  "nom": "physique",
+  "__v": 0
+}]

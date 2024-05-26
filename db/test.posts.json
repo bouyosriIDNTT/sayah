@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "66390642e6af3d753a3997f5"
+  },
+  "user": {
+    "$oid": "661c2e307395f78b2677c95e"
+  },
+  "title": "1ere anneé ",
+  "description": "30 Personnes",
+  "__v": 0
+}]

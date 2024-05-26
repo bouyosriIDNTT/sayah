@@ -1,0 +1,185 @@
+[{
+  "_id": {
+    "$oid": "663d2f1b6928e136cfd24fe8"
+  },
+  "nom": "amine",
+  "prenom": "sayah",
+  "email": "zzzz@gmail.com",
+  "password": "$2a$10$COslqjhMTq81ace0V9U3IuyRhmuZogiamHNMBibZeRazDHbNcI49u",
+  "__t": "Eleve",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d39caac2f5bcde8c27aef"
+  },
+  "nom": "John",
+  "prenom": "Doe",
+  "email": "johndoe@example.com",
+  "password": "$2a$10$FVUBwNNYsCNCahfS7Pl6oOuL4oHqXyW5rHsm8vTSVxQFG8Yuop/mi",
+  "__t": "Enseignant",
+  "specialite": [
+    {
+      "nom": "Mathématiques",
+      "_id": {
+        "$oid": "663d39caac2f5bcde8c27af0"
+      }
+    },
+    {
+      "nom": "Physique",
+      "_id": {
+        "$oid": "663d39caac2f5bcde8c27af1"
+      }
+    }
+  ],
+  "Publication": [],
+  "GroupeMatiere": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d3a0b5bea10148dcbdd42"
+  },
+  "nom": "John",
+  "prenom": "Doe",
+  "email": "johsdsffsdoe@example.com",
+  "password": "$2a$10$C4cL2eOHemOBwwTUn/gJuOLbELbXGHwkTV1tra7rowDvp/VAdM5fe",
+  "__t": "Enseignant",
+  "specialite": [
+    {
+      "nom": "Mathématiques",
+      "_id": {
+        "$oid": "663d3a0b5bea10148dcbdd43"
+      }
+    },
+    {
+      "nom": "Physique",
+      "_id": {
+        "$oid": "663d3a0b5bea10148dcbdd44"
+      }
+    }
+  ],
+  "Publication": [],
+  "GroupeMatiere": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d3c7e00c76b325c0b55ce"
+  },
+  "nom": "John",
+  "prenom": "Doe",
+  "email": "johsdsfcdcddfsdoe@example.com",
+  "password": "$2a$10$Y4N0P5Vpp7PGryTzramF5eeuZ9Tq/jPH0J5qUoJEX8B3IRvbw9L7m",
+  "__t": "Enseignant",
+  "specialite": [
+    {
+      "nom": "Mathématiques",
+      "_id": {
+        "$oid": "663d3c7e00c76b325c0b55cf"
+      }
+    },
+    {
+      "nom": "Physique",
+      "_id": {
+        "$oid": "663d3c7e00c76b325c0b55d0"
+      }
+    }
+  ],
+  "Publication": [],
+  "GroupeMatiere": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664a19bb06f85f1fe5391bd8"
+  },
+  "nom": "aziz",
+  "prenom": "sayah",
+  "email": "aziz@gmail.com",
+  "password": "$2a$10$3HGK6UK8Tcz1usAelyU7MeEOSfqZYF73tZTz.spTyzgw4wFHaauZe",
+  "__t": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664a1b707585a7589f356f59"
+  },
+  "nom": "karim",
+  "prenom": "bouzid",
+  "email": "karimm@gmail.com",
+  "password": "$2a$10$f6mMv0b9ahNpVctUvqC0MOKi0GEmbwtg5Y5Zf2r4L6UC3JjqZImh.",
+  "__t": "Eleve",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664a1b707585a7589f356f5b"
+  },
+  "nom": "karim",
+  "prenom": "bouzid",
+  "email": "karimm@gmail.com",
+  "password": "$2a$10$f6mMv0b9ahNpVctUvqC0MOKi0GEmbwtg5Y5Zf2r4L6UC3JjqZImh.",
+  "__t": "Eleve",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664fe6bc85ebc61766368826"
+  },
+  "nom": "John",
+  "prenom": "Doe",
+  "email": "johsdsffsdoe@example.com",
+  "password": "$2a$10$6/HJ2PIRVAkkD10wMx9Rze1v3PD8wrOYcBqbvknFhuh4wnwLamwfa",
+  "__t": "Enseignant",
+  "specialite": [
+    {
+      "nom": "Mathématiques",
+      "_id": {
+        "$oid": "664fe6bc85ebc61766368827"
+      }
+    },
+    {
+      "nom": "Physique",
+      "_id": {
+        "$oid": "664fe6bc85ebc61766368828"
+      }
+    }
+  ],
+  "Publication": [],
+  "GroupeMatiere": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664fe7e685ebc6176636882f"
+  },
+  "nom": "ameni",
+  "prenom": "bouzid",
+  "email": "ameni@gmail.com",
+  "password": "$2a$10$874mSZ/z.ZOBz1cyZnYKo.DsWmkauAmbKDV.2IDB4vZBsNNxexhmu",
+  "__t": "Eleve",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664fe7e685ebc61766368831"
+  },
+  "nom": "ameni",
+  "prenom": "bouzid",
+  "email": "ameni@gmail.com",
+  "password": "$2a$10$874mSZ/z.ZOBz1cyZnYKo.DsWmkauAmbKDV.2IDB4vZBsNNxexhmu",
+  "__t": "Eleve",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664fe82885ebc61766368837"
+  },
+  "nom": "aziz",
+  "prenom": "sayah",
+  "email": "aziz@gmail.com",
+  "password": "$2a$10$TAzYma1sp9xU/whoFHWTqe2Tv3PZ1tCPmdhbs/7wrw46NhPWwNDcy",
+  "__t": "admin",
+  "__v": 0
+}]

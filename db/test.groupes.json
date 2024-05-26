@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "664a2c0d43daadae8a2c2b9e"
+  },
+  "NomDeGroupe": "Dadesh",
+  "Abbreviation": "DD",
+  "enseignant": {
+    "$oid": "663d39caac2f5bcde8c27aef"
+  },
+  "users": [
+    {
+      "$oid": "663d2f1b6928e136cfd24fe8"
+    }
+  ],
+  "__v": 1
+}]

@@ -1,0 +1,304 @@
+[{
+  "_id": {
+    "$oid": "663d447a1266c63831a63713"
+  },
+  "question": "What is the capital of France?",
+  "reponse": {
+    "Paris": true,
+    "London": false,
+    "Berlin": false
+  },
+  "specialite": {
+    "$oid": "663d4391df40ecd0d6f2292e"
+  },
+  "__v": 0,
+  "note": "20"
+},
+{
+  "_id": {
+    "$oid": "663d447a1266c63831a63715"
+  },
+  "question": "What is the largest mammal?",
+  "reponse": {
+    "Elephant": true,
+    "Blue whale": false,
+    "Giraffe": false
+  },
+  "specialite": {
+    "$oid": "663d4391df40ecd0d6f2292e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d449021006727ca5762c9"
+  },
+  "question": "What is the capital of France?",
+  "reponse": {
+    "Paris": true,
+    "London": false,
+    "Berlin": false
+  },
+  "specialite": {
+    "$oid": "663d4391df40ecd0d6f2292e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d449021006727ca5762cb"
+  },
+  "question": "What is the largest mammal?",
+  "reponse": {
+    "Elephant": true,
+    "Blue whale": false,
+    "Giraffe": false
+  },
+  "specialite": {
+    "$oid": "663d4391df40ecd0d6f2292e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d5968bcfc133ca088b648"
+  },
+  "question": "What is the capital of France?",
+  "reponse": {
+    "Paris": true,
+    "London": false,
+    "Berlin": false
+  },
+  "specialite": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d5968bcfc133ca088b64a"
+  },
+  "question": "What is the largest mammal?",
+  "reponse": {
+    "Elephant": true,
+    "Blue whale": false,
+    "Giraffe": false
+  },
+  "specialite": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d59cdfbaf589aed38ff81"
+  },
+  "question": "What is the largest mammal?",
+  "reponse": {
+    "Elephant": true,
+    "Blue whale": false,
+    "Giraffe": false
+  },
+  "specialite": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d5b629a12e2b9d0485e19"
+  },
+  "question": "What is the capital of France?",
+  "reponse": [
+    {
+      "option": "Paris",
+      "isCorrect": true,
+      "_id": {
+        "$oid": "663d5b629a12e2b9d0485e1a"
+      }
+    },
+    {
+      "option": "London",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "663d5b629a12e2b9d0485e1b"
+      }
+    },
+    {
+      "option": "Berlin",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "663d5b629a12e2b9d0485e1c"
+      }
+    }
+  ],
+  "specialite": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d5b629a12e2b9d0485e1e"
+  },
+  "question": "What is the largest mammal?",
+  "reponse": [
+    {
+      "option": "Elephant",
+      "isCorrect": true,
+      "_id": {
+        "$oid": "663d5b629a12e2b9d0485e1f"
+      }
+    },
+    {
+      "option": "Blue whale",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "663d5b629a12e2b9d0485e20"
+      }
+    },
+    {
+      "option": "Giraffe",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "663d5b629a12e2b9d0485e21"
+      }
+    }
+  ],
+  "specialite": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664a103996520dbe4d7c25e7"
+  },
+  "question": "What is the capital of France?",
+  "reponse": [
+    {
+      "option": "Paris",
+      "isCorrect": true,
+      "_id": {
+        "$oid": "664a103996520dbe4d7c25e8"
+      }
+    },
+    {
+      "option": "London",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "664a103996520dbe4d7c25e9"
+      }
+    },
+    {
+      "option": "Berlin",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "664a103996520dbe4d7c25ea"
+      }
+    }
+  ],
+  "specialite": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664a103996520dbe4d7c25ec"
+  },
+  "question": "What is the largest mammal?",
+  "reponse": [
+    {
+      "option": "Elephant",
+      "isCorrect": true,
+      "_id": {
+        "$oid": "664a103996520dbe4d7c25ed"
+      }
+    },
+    {
+      "option": "Blue whale",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "664a103996520dbe4d7c25ee"
+      }
+    },
+    {
+      "option": "Giraffe",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "664a103996520dbe4d7c25ef"
+      }
+    }
+  ],
+  "specialite": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664a13cfd6dff9b425cd5d63"
+  },
+  "question": "What is the capital of France?",
+  "reponse": [
+    {
+      "option": "Paris",
+      "isCorrect": true,
+      "_id": {
+        "$oid": "664a13cfd6dff9b425cd5d64"
+      }
+    },
+    {
+      "option": "London",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "664a13cfd6dff9b425cd5d65"
+      }
+    },
+    {
+      "option": "Berlin",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "664a13cfd6dff9b425cd5d66"
+      }
+    }
+  ],
+  "specialite": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664a13cfd6dff9b425cd5d68"
+  },
+  "question": "What is the largest mammal?",
+  "reponse": [
+    {
+      "option": "Elephant",
+      "isCorrect": true,
+      "_id": {
+        "$oid": "664a13cfd6dff9b425cd5d69"
+      }
+    },
+    {
+      "option": "Blue whale",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "664a13cfd6dff9b425cd5d6a"
+      }
+    },
+    {
+      "option": "Giraffe",
+      "isCorrect": false,
+      "_id": {
+        "$oid": "664a13cfd6dff9b425cd5d6b"
+      }
+    }
+  ],
+  "specialite": {
+    "$oid": "663d3b72d922efcaea66ed81"
+  },
+  "__v": 0
+}]
