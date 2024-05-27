@@ -15,7 +15,7 @@ const createAdmin = async (req, res) => {
         const hash = await bcrypt.hash(req.body.password, 10);
         req.body.password = hash;
         const user = await adminModel.create(req.body);
-        res.send(user);
+        res.status(200).send({data:user,message : "admin created successfully"});
     } catch (error) {
         console.log(error);
         return helpers.customError(res, error);

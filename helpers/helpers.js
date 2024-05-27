@@ -1,7 +1,7 @@
-const EleveModel = require("../models/eleve.model");
+const UserModel = require("../models/users.model");
 
 const checkUser = async (email) =>{
-    const exist = await EleveModel.findOne({email: email});
+    const exist = await UserModel.findOne({email: email});
     return exist;
 };
 
@@ -14,4 +14,4 @@ const customError = (res, err) =>{
 module.exports.helpers ={
     checkUser,
     customError
-};      
+};

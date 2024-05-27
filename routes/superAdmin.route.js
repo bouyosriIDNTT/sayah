@@ -1,11 +1,11 @@
-const express = require ("express");
+const express = require("express");
 const router = express.Router();
 const { superAdminController } = require("../controllers/superAdmin.controller");
 
-
-router.post("/creat", superAdminController.createAdmin);
-router.get("/consult", superAdminController.getAdmin);
-router.put("/modifier", superAdminController.updateAdmin);
-router.delete("/supp", superAdminController.deleteAdmin);
+// Routes with the "super-admin/" prefix
+router.post("/super-admin/create", superAdminController.createAdmin);
+router.get("/super-admin/consult", superAdminController.getAdmin);
+router.put("/super-admin/modifier", superAdminController.updateAdmin);
+router.delete("/super-admin/delete", superAdminController.deleteAdmin);
 
 module.exports.superAdminRouter = router;
