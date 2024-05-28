@@ -5,6 +5,7 @@ const router = express();
 
 
 router.post("/createTest", enseignantController.createTest);
+router.get("/get-test/:id", enseignantController.getTestById);
 router.get("/getTests", enseignantController.getTests);
 router.put('/note/:id', enseignantController.UpdateNote);
 

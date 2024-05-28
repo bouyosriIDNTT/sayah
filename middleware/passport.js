@@ -1,20 +1,28 @@
 const passport = require('passport');
-const { userModel } = require('../models/users.model');
+const userModel = require('../models/users.model');
 
-var JwtStrategy = require('passport-jwt').Strategy,
-    ExtractJwt = require('passport-jwt').ExtractJwt;
-var opts = {}
-opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
-opts.secretOrKey = process.env.SECRET_KEY;
+const { Strategy: JwtStrategy, ExtractJwt } = require('passport-jwt');
 
-module.exports = (passport) =>{
-    passport.use(
-        new JwtStrategy(opts, async function(jwt_payload, done) {
-       const user = await userModel.findOne({ _id: jwt_payload.id});
-       if(!user){
+// Verify that JWT_SECRET is loaded
+console.log('JWT_SECRET:', process.env.JWT_SECRET);
+
+const opts = {
+  jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+  secretOrKey: process.env.JWT_SECRET,
+};
+
+module.exports = (passport) => {
+  passport.use(
+    new JwtStrategy(opts, async (jwt_payload, done) => {
+      try {
+        const user = await userModel.findOne({ _id: jwt_payload.id });
+        if (!user) {
+          return done(null, false);
+        }
+        return done(null, user);
+      } catch (err) {
         return done(err, false);
-       } 
-       return done(null, user); 
+      }
     })
-    );
+  );
 };

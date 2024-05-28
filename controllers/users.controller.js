@@ -20,18 +20,15 @@ const Register = async (req, res) => {
         const user = await EleveModel.create(req.body);
         res.send(user);
     } catch (error) {
-        console.log(error);
         return helpers.customError(res, error);
     }
 };
 
 const FindAll = async (req, res) => {
-    console.log(req.user);
     try{
         const users = await userModel.find().select("-password");
     return res.send(users);
     } catch (error) {
-        console.log(error);
         return helpers.customError(res, error);
     }
 };

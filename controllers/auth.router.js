@@ -15,7 +15,7 @@ try{
     const payload = {
         id: exist._id,
         email: exist.email,
-        role: exist.role,
+        __t: exist.__t,
     };
 
     const token = jwt.sign(payload, process.env.SECRET_KEY, {
@@ -41,7 +41,30 @@ const Logout = async (req, res) => {
     }
   };
 
+// Function to verify and decode JWT token
+const getUserFromToken = (token) => {
+    try {
+        // Verify and decode the token
+        const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
+        // Extract user information from the decoded token
+        const user = {
+            id: decodedToken.id,
+            email: decodedToken.email,
+            nom: decodedToken.nom,
+            prenom: decodedToken.prenom,
+            __t: decodedToken.__t,
+        };
+
+        return user;
+    } catch (error) {
+        // Handle invalid or expired token
+        console.error('Error decoding token:', error);
+        return null;
+    }
+};
+
 module.exports.authController = {
     Login,
-    Logout
+    Logout,
+    getUserFromToken
 };

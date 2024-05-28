@@ -1,5 +1,5 @@
 const testModel = require("../models/test.model");
-
+const { authController } = require("./auth.router");
 
 
 const getTests = async (req,res) => {
@@ -11,6 +11,58 @@ const getTests = async (req,res) => {
         console.log(error);
     }
 };
+const getTestById = async (req, res) => {
+    try {
+        // Retrieve the user from the JWT token
+        const token = req.headers.authorization.split(' ')[1]; // Extract the token from the Bearer header
+        const user = authController.getUserFromToken(token); // Assume getUserFromToken function is implemented
+        console.log(user)
+
+        // Fetch tests from the database
+        const tests = await testModel.find().lean();
+
+        // Modify the tests array based on user type
+        // const modifiedTests = tests.map(test => {
+        //     // Check if user type is "Eleve"
+        //     if (user && user.__t === 'admin') {
+        //         console.log("first")
+        //         // For Eleve users, create a new object without the isCorrect field
+        //         const { isCorrect, ...rest } = test;
+        //         return rest;
+        //     } else {
+        //         // For other user types, return the original test object
+        //         return test;
+        //     }
+        // });
+
+        // Modify the tests array based on user type
+        const modifiedTests = tests.map(test => {
+            // Loop through each reponse object and remove the isCorrect field
+            const modifiedReponses = test.reponse.map(reponse => {
+                if (user && user.__t === 'admin') {
+                    return reponse
+                }
+                else {
+                    const { isCorrect, ...rest } = reponse;
+                    return rest;
+                }
+            });
+            
+            // Create a new object without the isCorrect field in the reponse array
+            const modifiedTest = { ...test, reponse: modifiedReponses };
+            return modifiedTest;
+        });
+
+
+        res.send(modifiedTests);
+    } catch (error) {
+        console.log(error);
+        res.status(500).send('Server error');
+    }
+};
+
+
+
 
 
 const createTest = async (req, res) => {
@@ -46,8 +98,8 @@ const createTest = async (req, res) => {
 
 const UpdateNote = async (req, res) => {
     try {
-        const { id } = req.params;  // Assume the record ID is passed as a URL parameter
-        const { note } = req.body;  // Assume the new note is passed in the request body
+        const { id } = req.params;
+        const { note } = req.body;
 
         // Validate input
         if (!note) {
@@ -78,6 +130,7 @@ const UpdateNote = async (req, res) => {
 
 module.exports.enseignantController = {
     createTest,
+    getTestById,
     getTests,
     UpdateNote
 };
