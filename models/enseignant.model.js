@@ -23,30 +23,6 @@ Publication:[{
     },
   
 }],
-// Activites:
-// [{
-// DateDeCreation:{
-//     type: String,
-//     required: false
-// },
-
-// URLActivite: {
-//     type: String,
-//     required: false 
-// },
-// nom: {
-//     type: String,
-//     required: true 
-// },   
-//  Files: [{
-//         type:String,
-//         required:false
-//     }],
-//  GroupeEns: [{
-//         type:mongoose.Schema.Types.ObjectId,
-//         ref:'Groupe'
-//     }],
-// }],
 
 GroupeMatiere:[{
     idGroupe: {
