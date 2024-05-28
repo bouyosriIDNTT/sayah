@@ -15,6 +15,7 @@ const { adminRouter } = require('./routes/admin.route');
 const { superAdminRouter } = require('./routes/superAdmin.route');
 const { enseignantRouter } = require('./routes/enseignant.route');
 const { groupeRouter } = require('./routes/groupe.route');
+const { testsRouter } = require('./routes/tests.route');
 
 
 const app = express();
@@ -45,7 +46,8 @@ app.use("/api", [
   adminRouter,
   superAdminRouter,
   enseignantRouter,
-  groupeRouter
+  groupeRouter,
+  testsRouter
 ]);
 
 // Error handling middleware

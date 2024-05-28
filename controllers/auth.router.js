@@ -1,6 +1,8 @@
 const { helpers } = require("../helpers/helpers");
 const bcrypt =require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const userModel = require("../models/users.model");
+
 
 const Login = async (req, res) =>{
 try{
@@ -42,25 +44,15 @@ const Logout = async (req, res) => {
   };
 
 // Function to verify and decode JWT token
-const getUserFromToken = (token) => {
-    try {
-        // Verify and decode the token
-        const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
-        // Extract user information from the decoded token
-        const user = {
-            id: decodedToken.id,
-            email: decodedToken.email,
-            nom: decodedToken.nom,
-            prenom: decodedToken.prenom,
-            __t: decodedToken.__t,
-        };
-
-        return user;
-    } catch (error) {
-        // Handle invalid or expired token
-        console.error('Error decoding token:', error);
-        return null;
-    }
+const getUserFromToken = async (token) => {
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const user = await userModel.findById(decoded.id);
+    return user;
+  } catch (error) {
+    console.error("Error decoding token:", error);
+    return null;
+  }
 };
 
 module.exports.authController = {
